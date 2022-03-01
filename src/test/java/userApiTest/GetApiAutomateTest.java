@@ -31,7 +31,7 @@ public class GetApiAutomateTest extends BaseTest{
 		 * System.out.println(obj.get("author")); }
 		 */
 		ResponseValidations.responseCodeValidation(response, 200);
-		ResponseValidations.responseKeyValidation(response, "title");
+		ResponseValidations.responseKeyValidationForJSONArray(response, "title");
 		ResponseValidations.responseTimeValidation(response);
 	}
 

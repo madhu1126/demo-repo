@@ -2,20 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-28T17:37:03 IST" name="Default suite" finished-at="2022-02-28T17:37:05 IST" duration-ms="1796">
+  <suite started-at="2022-03-01T17:30:55 IST" name="Default suite" finished-at="2022-03-01T17:30:57 IST" duration-ms="2280">
     <groups>
     </groups>
-    <test started-at="2022-02-28T17:37:03 IST" name="Default test" finished-at="2022-02-28T17:37:05 IST" duration-ms="1796">
-      <class name="userApiTest.PostApiAutomateTest">
-        <test-method is-config="true" signature="baseTest()[pri:0, instance:userApiTest.PostApiAutomateTest@f5acb9d]" started-at="2022-02-28T17:37:03 IST" name="baseTest" finished-at="2022-02-28T17:37:03 IST" duration-ms="544" status="PASS">
+    <test started-at="2022-03-01T17:30:55 IST" name="Default test" finished-at="2022-03-01T17:30:57 IST" duration-ms="2280">
+      <class name="userApiTest.ComplexJsonVerfication">
+        <test-method signature="responseVerify()[pri:0, instance:userApiTest.ComplexJsonVerfication@28f3b248]" started-at="2022-03-01T17:30:55 IST" name="responseVerify" finished-at="2022-03-01T17:30:57 IST" duration-ms="2253" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- baseTest -->
-        <test-method signature="postApiTest()[pri:0, instance:userApiTest.PostApiAutomateTest@f5acb9d]" started-at="2022-02-28T17:37:03 IST" name="postApiTest" finished-at="2022-02-28T17:37:05 IST" duration-ms="1219" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postApiTest -->
-      </class> <!-- userApiTest.PostApiAutomateTest -->
+        </test-method> <!-- responseVerify -->
+      </class> <!-- userApiTest.ComplexJsonVerfication -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

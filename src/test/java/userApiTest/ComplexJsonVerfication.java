@@ -6,7 +6,9 @@ import org.testng.annotations.Test;
 
 import deserialization.ListUsersPojo;
 import deserialization.dataPojo;
+import deserializationRevision.ListResourcesPojo;
 import io.restassured.RestAssured;
+import utils.FileandEnv;
 
 public class ComplexJsonVerfication {
 	
@@ -24,6 +26,15 @@ public class ComplexJsonVerfication {
 			System.out.println(list.get(i));
 		}
 		
+	}
+	
+	@Test
+	public void nestedJsonVerification() {
+		
+		RestAssured.baseURI=FileandEnv.envAndFile().get("serverUrl");
+		
+		ListResourcesPojo listResources = RestAssured.given().when().get().as(ListResourcesPojo.class);
+		System.out.println(listResources.getTotal_pages());
 	}
 
 }

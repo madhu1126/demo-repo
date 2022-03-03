@@ -4,6 +4,8 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
 
+import com.google.gson.JsonObject;
+
 import io.restassured.response.Response;
 
 public class ResponseValidations {
@@ -20,6 +22,7 @@ public class ResponseValidations {
 			JSONObject jObj = array.getJSONObject(i);
 			String requiredKey = (String) jObj.get(key);
 			System.out.println(requiredKey);
+			
 		}
 	}
 
